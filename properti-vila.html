@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Properti Vila - Tasnim Property</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <img src="images/logo.png" alt="Logo" class="logo"/>
+    <ul class="nav-links">
+  <li><a href="index.html">Beranda</a></li>
+
+  <li class="dropdown">
+    <a href="#">Properti <i class="fas fa-caret-down"></i></a>
+    <ul class="dropdown-menu">
+      <li><a href="properti.html">Valley</a></li>
+      <li><a href="kavling.html">Kavling</a></li>
+      <li><a href="hanok.html">Hanok</a></li>
+      <li><a href="otsmani.html">Otsmani</a></li>
+      <li><a href="fishpond.html">Fishpond</a></li>
+      <li><a href="vintage.html">Vintage</a></li>
+    </ul>
+  </li>
+  <li><a href="about.html">Tentang</a></li>
+  <li><a href="kontak.html">Kontak</a></li>
+  <li><a href="galeri.html">Galeri</a></li>
+</ul>
+    </div>
+  </nav>
+  <!-- Konten utama -->
+  <main>
+    <section class="section gray">
+      <div class="container">
+        <h2>Tasnim Hanok </h2>
+        <div class="property-grid">
+
+          <!-- Vila 1 -->
+          <div class="property-card">
+            <img src="img/hanok-60.jpg" alt="Hanok Vila 60" />
+            <div class="property-info">
+              <h3>Hanok Villa Type 60/90</h3>
+              <p class="location"><i class="fas fa-map-marker-alt"></i> Tenjolaya, Bogor</p>
+              <p class="price">Rp550.000.000</p>
+              <div class="features">
+                <span><i class="fas fa-bed"></i> 3</span>
+                <span><i class="fas fa-bath"></i> 2</span>
+                <span><i class="fas fa-ruler-combined"></i> 90 m²</span>
+              </div>
+              <a href="#" class="btn">Lihat Detail</a>
+            </div>
+          </div>
+
+          <!-- Vila 2 -->
+          <div class="property-card">
+            <img src="img/hanok-45.jpg" alt="Hanok Vila 45" />
+            <div class="property-info">
+              <h3>Hanok Villa Type 45/70</h3>
+              <p class="location"><i class="fas fa-map-marker-alt"></i> Cijeruk, Bogor</p>
+              <p class="price">Rp420.000.000</p>
+              <div class="features">
+                <span><i class="fas fa-bed"></i> 2</span>
+                <span><i class="fas fa-bath"></i> 1</span>
+                <span><i class="fas fa-ruler-combined"></i> 70 m²</span>
+              </div>
+              <a href="#" class="btn">Lihat Detail</a>
+            </div>
+          </div>
+
+          <!-- Vila 3 -->
+          <div class="property-card">
+            <img src="img/hanok-36.jpg" alt="Hanok Vila 36" />
+            <div class="property-info">
+              <h3>Hanok Villa Type 36/60</h3>
+              <p class="location"><i class="fas fa-map-marker-alt"></i> Ciampea, Bogor</p>
+              <p class="price">Rp310.000.000</p>
+              <div class="features">
+                <span><i class="fas fa-bed"></i> 2</span>
+                <span><i class="fas fa-bath"></i> 1</span>
+                <span><i class="fas fa-ruler-combined"></i> 60 m²</span>
+              </div>
+              <a href="#" class="btn">Lihat Detail</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Logo Tasnim" class="footer-logo" />
+        <div>
+          <h4>Tasnim Property</h4>
+          <p>Properti syariah terpercaya.</p>
+        </div>
+      </div>
+      <div>
+        <h4>Kontak</h4>
+        <p><i class="fas fa-phone"></i> 0857-3013-0649</p>
+        <p><i class="fas fa-envelope"></i> tasnim@gmail.com</p>
+      </div>
+      <div>
+        <h4>Sosial Media</h4>
+        <p><a href="https://facebook.com/tasnimproperty" target="_blank" class="social-link"><i class="fab fa-facebook"></i> Facebook</a></p>
+        <p><a href="https://instagram.com/tasnimproperty" target="_blank" class="social-link"><i class="fab fa-instagram"></i> Instagram</a></p>
+        <p><a href="https://wa.me/6285730130649" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i> WhatsApp</a></p>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2025 Tasnim Property. All rights reserved.</p>
+  </footer>
+
+  <!-- Tombol Kembali ke Atas -->
+  <button id="scrollToTopBtn" title="Kembali ke atas">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script>
+    const scrollBtn = document.getElementById("scrollToTopBtn");
+
+    window.onscroll = function () {
+      scrollBtn.style.display = (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200)
+        ? "block"
+        : "none";
+    };
+
+    scrollBtn.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal().reveal('.property-card', {
+      origin: 'bottom',
+      distance: '30px',
+      duration: 1000,
+      interval: 200,
+      easing: 'ease-in-out'
+    });
+  </script>
+</body>
+</html>

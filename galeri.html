@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galeri - Tasnim Property</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <img src="images/logo.png" alt="Logo" class="logo"/>
+    <ul class="nav-links">
+  <li><a href="index.html">Beranda</a></li>
+
+  <li class="dropdown">
+    <a href="#">Properti <i class="fas fa-caret-down"></i></a>
+    <ul class="dropdown-menu">
+      <li><a href="kavling.html">Kavling</a></li>
+      <li><a href="hanok.html">Hanok</a></li>
+      <li><a href="otsmani.html">Otsmani</a></li>
+      <li><a href="fishpond.html">Fishpond</a></li>
+      <li><a href="vintage.html">Vintage</a></li>
+    </ul>
+  </li>
+  <li><a href="about.html">Tentang</a></li>
+  <li><a href="kontak.html">Kontak</a></li>
+  <li><a href="galeri.html">Galeri</a></li>
+</ul>
+    </div>
+  </nav>
+
+  <!-- Galeri -->
+ <main>
+  <section class="gallery-section">
+    <h2>Tasnim Valley</h2>
+
+    <div class="gallery-grid">
+      <img src="img/fishpond.jpg" class="gallery-img" />
+      <img src="img/hanok.png" class="gallery-img" />
+      <img src="img/otsmani-produk.png" class="gallery-img" />
+      <img src="img/otsmani.jpg" class="gallery-img" />
+      <img src="img/TasnimLandingPage.png" class="gallery-img" />
+      <img src="img/1.jpg" class="gallery-img" />
+      <img src="img/2.jpg" class="gallery-img" />
+      <img src="img/3.jpg" class="gallery-img" />
+      <img src="img/4.jpg" class="gallery-img" />
+      <img src="img/5.jpg" class="gallery-img" />
+      <img src="img/7.jpeg" class="gallery-img" />
+      <img src="img/7.jpg" class="gallery-img" />
+      <img src="img/vintage.png" class="gallery-img" />
+      <img src="img/vintage.png" class="gallery-img" />
+      <img src="img/vintage.png" class="gallery-img" />
+    
+      <!-- Tambah foto sesuka hati -->
+    </div>
+  </section>
+</main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Logo Tasnim" class="footer-logo" />
+        <div>
+          <h4>Tasnim Property</h4>
+          <p>Properti syariah terpercaya.</p>
+        </div>
+      </div>
+      <div>
+        <h4>Kontak</h4>
+        <p><i class="fas fa-phone"></i> 0857-3013-0649</p>
+        <p><i class="fas fa-envelope"></i> tasnim@gmail.com</p>
+      </div>
+      <div>
+        <h4>Sosial Media</h4>
+        <p><a href="https://facebook.com/tasnimproperty" target="_blank" class="social-link"><i class="fab fa-facebook"></i> Facebook</a></p>
+        <p><a href="https://instagram.com/tasnimproperty" target="_blank" class="social-link"><i class="fab fa-instagram"></i> Instagram</a></p>
+        <p><a href="https://wa.me/6285730130649" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i> WhatsApp</a></p>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2025 Tasnim Property. All rights reserved.</p>
+  </footer>
+
+   <!-- Tombol Kembali ke Atas -->
+<button id="scrollToTopBtn" title="Kembali ke atas">
+  <i class="fas fa-chevron-up"></i>
+</button>
+<script>
+  const scrollBtn = document.getElementById("scrollToTopBtn");
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      scrollBtn.style.display = "block";
+    } else {
+      scrollBtn.style.display = "none";
+    }
+  };
+
+  scrollBtn.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+  <script>
+    function scrollGallery(direction) {
+      const slider = document.getElementById('gallerySlider');
+      const scrollAmount = 320;
+      slider.scrollLeft += direction * scrollAmount;
+    }
+  </script>
+
+</body>
+</html>
